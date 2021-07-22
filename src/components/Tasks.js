@@ -9,11 +9,13 @@ const Tasks = () => {
   ]
 
   return (
-    <>
+    <div className="ui segment">
       {taskList.map((task)=>(
-        <Task key={task.id} task={task} />
+        <div className="ui divider">
+          <Task key={task.id} task={task} />
+        </div>        
       ))}
-    </>
+    </div>
   );
 }
 
