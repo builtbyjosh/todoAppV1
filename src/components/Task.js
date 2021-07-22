@@ -7,7 +7,7 @@ const Task = ({ task }) => {
         <h3>{task.text}</h3>
       </div>
       <div className="header">
-        <i className="icon window close link"></i>
+        <i className="icon window close link red"></i>
       </div>
     </div>
   );
