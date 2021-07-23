@@ -2,8 +2,12 @@ import "./App.css";
 import AddTask from "./components/AddTask";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
+import { useState } from "react";
 
 function App() {
+  const [task, setTasks] = useState([]);
+
+  
   const taskList = [
     { id: 1, text: "take out trash" },
     { id: 2, text: "Clean floor" },
@@ -12,7 +16,6 @@ function App() {
 
   // delete task
   const deleteTask = (id) => {
-    
     taskList.filter((task) => task.id !== id);
   };
 
